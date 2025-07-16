@@ -11,6 +11,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.594);
 }
 
 form{
@@ -40,10 +42,11 @@ input{
     font-size: 40px;
     padding-right: 10px;
     outline: none;
+    border: 1px solid gray;
 }
 
 button:active{
- border: 1px solid aqua;
+ border: 2px solid aqua;
 }
 
 button{
@@ -52,6 +55,8 @@ button{
     background-color: black;
 
     color: white;
+    outline: none;
+    border: 1px solid gray;
 }
 
 .calc{
@@ -72,4 +77,33 @@ button{
     position: absolute;
     bottom: 10px;
 
+}
+
+@media(max-width:450px){
+    .calculator{
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns:repeat(4,80px) ;
+    grid-template-rows: repeat(6,80px);
+
+    outline: none;
+    border: none;
+}
+
+form{
+    width: 350px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 15px;
+    padding-top: 20px;
+
+    
+}
 }
